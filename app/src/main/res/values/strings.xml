@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="title_activity_login">login</string>
+
+    <!-- login activity -->
+    <string name="userNum">رقم المستخدم</string>
+    <string name="userPassword"> كلمة المرور</string>
+    <string name="buttonLogin"> تسجيل الدخول</string>
+    <string name="forgetInterUserNum"> لقد نسيت ادخال رقم المستخدم </string>
+    <string name="forgetInterUserPassword"> لقد نسيت ادخال كلمة المرور </string>
+    <string name="chickInfo"> جاري التحقق من البيانات المدخلة </string>
+    <string name="chickUserInfo"> لقد ادخلت رقم المستخدم أو كلمة المرور خطا  </string>
+    <string name="chickInternet"> تأكد من اتصال الانترنت </string>
+    <string name="chickDB"> هناك خطأ في قاعدة البيانات </string>
+    <string name="login"> صفحة تسجيل الدخول </string>
+
+    <!-- user home activity -->
+    <string name="title_activity_user_home"> </string>
+    <string name="tabAccount">الرصيد</string>
+    <string name="tabPay">الدفعات</string>
+    <string name="tabService">إعلام بالخدمات</string>
+    <string name="topName">السيد: </string>
+    <string name="topLogout">تسجيل الخروج </string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_admin_home"> </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- admin home activity -->
+    <string name="addPayment">اضافة دفعة </string>
+    <string name="users">مستخدمين </string>
+    <string name="service">الخدمات </string>
+    <string name="groups">المجموعات </string>
+    <string name="addService">الخدمة </string>
+    <string name="addcarrency">العملة </string>
+    <string name="addcost">المبلغ </string>
+    <string name="addUserName">اسم المستخدم </string>
+    <string name="saveAdd"> حفظ </string>
+    <string name="add"> اضافة </string>
+    <string name="changeUserInfo"> تعديل بيانات المستخدم </string>
+    <string name="title_activity_admin_users"> </string>
+
+    <string name="addUser">اضافة مستخدم</string>
+    <string name="usersList">قائمة المستخدمين</string>
+
+    <string name="addServices">اضافة خدمة</string>
+    <string name="serviceList">قائمة الخدمات</string>
+    <string name="serverName">اسم الخدمة</string>
+    <string name="serverPrice">السعر المبدئي</string>
+    <string name="curencyType">نوع العملة</string>
+    <string name="addDone">نوع العملة</string>
+    <string name="serverDetails">تفاصيل الخدمة</string>
+    <string name="editServerDetails">تعديل</string>
+
+
+    <string name="addGroup">اضافة مجموعة</string>
+    <string name="groupDetails">تفاصيل مجموعة</string>
+    <string name="groupList">قائمة المجموعات</string>
+    <string name="groupName">اسم المجموعة</string>
+    <string name="groupPrice">السعر </string>
+    <string name="choseService">اختيار الخدمات </string>
+    <string name="choseUser">اختيار المستخدمين </string>
+    <string name="addGroupSave">حفظ الاضافة</string>
+
+    <string name="userphone"> هاتف المستخدم</string>
+    <string name="userNumFromAdmin">رقم المستخدم</string>
+    <string name="userLocation">موقع المستخدم</string>
+    <string name="userType">نوع المستخدم</string>
+    <string name="userAddPassword">كلمة المرور</string>
+    <string name="userNote">ملاحظة</string>
+
+    <string name="chooseGrope">اختر المجموعات</string>
+    <string name="ok">تم</string>
+    <string name="cancel">cancel</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="search_hint">أدخل الاسم</string>
+
+
+</resources>

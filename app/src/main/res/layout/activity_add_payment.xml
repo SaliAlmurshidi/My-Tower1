@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminHomeActivity.addPayment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layoutDirection="rtl"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/addPayment"
+            android:textSize="@dimen/BoldText"
+            android:textColor="@color/colorTextButton"
+            android:layout_marginEnd="15dp"/>
+
+    </android.support.v7.widget.Toolbar> <!-- tool bar name  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerService"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:text="@string/addService"
+                android:textSize="@dimen/NormalText"
+                android:textStyle="bold" />
+
+        </LinearLayout> <!--service -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerAccount"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:background="@android:drawable/btn_dropdown"
+                android:gravity="end"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="@string/addcarrency"
+                android:textSize="@dimen/NormalText"
+                android:textStyle="bold" />
+
+        </LinearLayout> <!--account -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/moneyAdd"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="0000"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:text="@string/addcost"
+                android:textSize="@dimen/NormalText"
+                android:textStyle="bold" />
+
+        </LinearLayout> <!-- money -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerUsers"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/addUserName"
+                android:textSize="@dimen/NormalText"
+                android:textStyle="bold" />
+
+        </LinearLayout> <!--user name -->
+
+        <Button
+            android:id="@+id/buttonAddPayment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="doneAddPayment"
+            android:text="@string/add" /> <!--add button -->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

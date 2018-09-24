@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- login activity-->
+    <dimen name="login_width">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="buttonTextLogin">16dp</dimen>
+
+    <dimen name="buttonText">18dp</dimen>
+    <dimen name="BoldText">20dp</dimen>
+    <dimen name="NormalText">20dp</dimen>
+
+
+    <dimen name="row_padding_vertical">10dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+    <dimen name="adminHomeButtonWidh">200dp</dimen>
+
+</resources>

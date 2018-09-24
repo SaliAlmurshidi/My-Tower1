@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home.adminHome"
+    tools:showIn="@layout/app_bar_admin_home">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAddpayment"
+            android:layout_width="@dimen/adminHomeButtonWidh"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonshap"
+            android:text="@string/addPayment"
+            android:onClick="buttonAddpayment"/><!-- add payment button-->
+
+        <Button
+            android:id="@+id/buttonUsers"
+            android:layout_width="@dimen/adminHomeButtonWidh"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonshap"
+            android:text="@string/users"
+            android:onClick="buttonUsers"
+            /><!-- users button-->
+
+        <Button
+            android:id="@+id/buttonService"
+            android:layout_width="@dimen/adminHomeButtonWidh"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonshap"
+            android:text="@string/service"
+            android:onClick="buttonService"/><!-- service button-->
+
+        <Button
+            android:id="@+id/buttonGroups"
+            android:layout_width="@dimen/adminHomeButtonWidh"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshap"
+            android:onClick="buttonGroups"
+            android:text="@string/groups" /><!-- groups button-->
+
+    </LinearLayout> <!-- buttons list-->
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="بنزين"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/serverName"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- server Name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="20"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/serverPrice"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- server Price-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCurencyType"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            id:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:textA
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/curencyType"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- curency type-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/serverDetails"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="اضف ملاحظة"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="@string/serverDetails"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- details -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshap"
+            android:onClick="saveAddDone"
+            android:text="@string/addDone" /> <!-- add server -->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

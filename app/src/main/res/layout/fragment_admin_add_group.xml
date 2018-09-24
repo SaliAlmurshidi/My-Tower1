@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="بنزين"
+                android:id="@+id/groupName"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/groupName"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- Group Name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="20"
+                android:id="@+id/groupPrice"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/groupPrice"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- Group Price-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshap"
+            android:onClick="choseService"
+            android:text="@string/choseService" /> <!-- chose service -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshap"
+            android:onClick="choseUser"
+            android:text="@string/choseUser" /> <!-- chose users -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshap"
+            android:onClick="addGroupSave"
+            android:text="@string/addGroupSave" /> <!-- add group -->
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminHomeActivity.admin_users$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textAddUserName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/addUserName"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/addUserName"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- user name -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="000"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/userNum"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- user num-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="000"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/userphone"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- user phone-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/userPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/userPass"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="شقة 10"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/userLocation"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!--user location -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinnerUserType"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            id:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:textA
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/userType"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- user type-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addUsePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textaddUsePassword"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="******"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/userAddPassword"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!-- user password -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/userNote"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="اضف ملاحظة"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+
+                android:text="@string/userNote"
+                android:textColor="@color/textView"
+                android:textSize="@dimen/NormalText" />
+
+        </LinearLayout> <!--user note -->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btn"
+            android:onClick="chooseGroups"
+            android:background="@color/colorPrimary"
+            android:text="@string/chooseGrope" /> <!-- choose groups -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshap"
+            android:onClick="saveAddUser"
+            android:text="@string/saveAdd" /> <!-- save -->
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

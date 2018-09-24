@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminActivity.serviceDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/serverDetailsShow"
+        android:text="@string/serverDetails"
+        android:textAlignment="center"
+        android:textSize="@dimen/BoldText"
+        android:background="@drawable/textview_shap"
+        android:textColor="@color/colorTextButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:id="@+id/putServerName"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:hint="بنزين"
+                android:textAlignment="center"
+                android:textSize="@dimen/buttonText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serverName"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="@dimen/BoldText"/>
+
+        </LinearLayout> <!-- group Name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:id="@+id/putServerPrice"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:hint="50"
+                android:textAlignment="center"
+                android:textSize="@dimen/buttonText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="@string/serverPrice"
+                android:textSize="@dimen/BoldText" />
+
+        </LinearLayout> <!-- service price-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:id="@+id/putcurencyType"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:hint="دولار"
+                android:layout_marginBottom="2dp"
+                android:textAlignment="center"
+                android:textSize="@dimen/buttonText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="@string/serverPrice"
+                android:textSize="@dimen/BoldText" />
+
+        </LinearLayout> <!-- curency Type-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/serverDetails"
+            android:textStyle="bold"
+            android:textSize="@dimen/BoldText"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:hint="دولار"
+            android:background="@drawable/textview_background"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/buttonText"
+            android:layout_height="70dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshap"
+            android:layout_marginTop="50dp"
+            android:text="@string/editServerDetails"
+            android:textSize="@dimen/BoldText"/>
+    </LinearLayout>
+
+</RelativeLayout>
