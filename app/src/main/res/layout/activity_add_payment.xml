@@ -15,14 +15,31 @@
         android:layoutDirection="rtl"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:text="@string/addPayment"
-            android:textSize="@dimen/BoldText"
-            android:textColor="@color/colorTextButton"
-            android:layout_marginEnd="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:foregroundGravity="left"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/addPayment"
+                android:textSize="@dimen/BoldText"
+                android:textColor="@color/colorTextButton"
+                android:layout_marginEnd="15dp"/>
+        </RelativeLayout>
+
+
+
+
+
+
 
     </android.support.v7.widget.Toolbar> <!-- tool bar name  -->
 

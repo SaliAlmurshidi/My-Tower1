@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toolbar;
 
 import com.my_tower.my_tower.R;
 
@@ -23,6 +24,10 @@ public class addPayment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_payment);
+
+//        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+//        mToolbar.setTitle(getString(R.string.addPayment));
+//        mToolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
 
         adminID = getIntent().getStringExtra("ID");
         moneyAdd = (EditText) findViewById(R.id.moneyAdd);

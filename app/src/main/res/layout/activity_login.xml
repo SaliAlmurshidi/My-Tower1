@@ -24,20 +24,20 @@
                 android:id="@+id/userNumLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <!--
+
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/userNum"
                     android:textAlignment="center"
-                    android:id="@+id/userNum"/>-->
-                <EditText
-                    android:id="@+id/userNum"
-                    android:layout_width="@dimen/login_width"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/userNum"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                    android:id="@+id/userNum"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/userNum"-->
+                    <!--android:layout_width="@dimen/login_width"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/userNum"-->
+                    <!--android:inputType="number"-->
+                    <!--android:textAlignment="center" />-->
 
             </android.support.design.widget.TextInputLayout>
 
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/userPassword"
                     android:inputType="textPassword"
-                    android:textAlignment="center" />
+                    android:textAlignment="center" /><!-- user password-->
 
             </android.support.design.widget.TextInputLayout>
 

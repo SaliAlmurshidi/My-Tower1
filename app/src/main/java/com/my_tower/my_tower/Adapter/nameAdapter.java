@@ -5,10 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.TextView;
 
-import com.my_tower.my_tower.FilterHelper;
 import com.my_tower.my_tower.R;
 
 import java.util.ArrayList;
@@ -42,10 +40,6 @@ public class nameAdapter  extends RecyclerView.Adapter<nameAdapter.MyViewHolder>
         this.galaxies=filteredGalaxies;
     }
 
-
-    public Filter getFilter() {
-        return FilterHelper.newInstance(currentList,this);
-    }
 
     /*
     - Our MyViewHolder class

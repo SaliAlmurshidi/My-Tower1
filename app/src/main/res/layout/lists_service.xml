@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/serverName"
         android:hint="اسم الخدمة"
+
         android:textSize="25dp"
         android:textColor="@color/textTitel"
         android:textStyle="bold"/>

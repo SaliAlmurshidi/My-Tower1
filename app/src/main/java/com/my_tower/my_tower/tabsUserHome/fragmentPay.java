@@ -17,7 +17,6 @@ import com.my_tower.my_tower.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.my_tower.my_tower.home.userHome.MY_PREFS_NAME;
 
 public class fragmentPay extends Fragment {
     private List<payModel> payList = new ArrayList<>();
@@ -81,14 +80,14 @@ public class fragmentPay extends Fragment {
     }
 
     public void sharedPreferences (){
-        SharedPreferences preferences = this.getActivity().getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
-        //SharedPreferences prefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
-        String restoredText = preferences.getString("text", null);
-        if (restoredText != null) {
-            //name = preferences.getString("userName", "No name defined");//"No name defined" is the default value.
-            idName = preferences.getString("idUser", "No name defined");//"No name defined" is the default value.
-            // idName = prefs.getInt("idUser", 0); //0 is the default value.
-        }
+//        SharedPreferences preferences = this.getActivity().getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
+//        //SharedPreferences prefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+//        String restoredText = preferences.getString("text", null);
+//        if (restoredText != null) {
+//            //name = preferences.getString("userName", "No name defined");//"No name defined" is the default value.
+//            idName = preferences.getString("idUser", "No name defined");//"No name defined" is the default value.
+//            // idName = prefs.getInt("idUser", 0); //0 is the default value.
+//        }
     }
 }
 

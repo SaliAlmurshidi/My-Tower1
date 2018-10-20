@@ -1,9 +1,7 @@
 package com.my_tower.my_tower.home;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,14 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.my_tower.my_tower.R;
 import com.my_tower.my_tower.adminHomeActivity.addPayment;
-import com.my_tower.my_tower.adminHomeActivity.admin_users;
 import com.my_tower.my_tower.adminHomeActivity.admin_service;
-
-import static com.my_tower.my_tower.home.userHome.MY_PREFS_NAME;
+import com.my_tower.my_tower.adminHomeActivity.admin_users;
 
 public class adminHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,7 +30,7 @@ public class adminHome extends AppCompatActivity
 
         admin_name = getIntent().getStringExtra("userName");
         adminID = getIntent().getStringExtra("ID");
-        sharedPreferences();
+        //sharedPreferences();
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -72,27 +69,8 @@ public class adminHome extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.admin_home, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -100,17 +78,19 @@ public class adminHome extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_admain_addGrouops) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_admain_addService) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_admain_addUser) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_admain_groups) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_admain_user) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_admain_service) {
+
+        }else if (id == R.id.nav_admain_logout) {
 
         }
 
@@ -147,11 +127,11 @@ public class adminHome extends AppCompatActivity
         adminHome.this.startActivity(i);
     }
 
-    private void sharedPreferences(){
-        SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
-        //editor.putString("name", user_name);
-        editor.putString("idUser", adminID);
-        //editor.putInt("idUser", ID);
-        editor.apply();
-    }
+//    private void sharedPreferences(){
+//        SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
+//        //editor.putString("name", user_name);
+//        editor.putString("idUser", adminID);
+//        //editor.putInt("idUser", ID);
+//        editor.apply();
+//    }
 }

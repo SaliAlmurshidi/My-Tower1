@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.my_tower.my_tower.R;
 import com.my_tower.my_tower.home.adminHome;
+import com.my_tower.my_tower.home.userHome;
 
 public class login extends AppCompatActivity {
      TextInputLayout userNumLayout , userPasswordLayout;
@@ -39,8 +40,8 @@ public class login extends AppCompatActivity {
         String typeNmae ="";
 
         if (typeNmae.isEmpty()){
-           // yourInfoError();
-            //userNumLayout.setError(getResources().getString(R.string.forgetInterUserNum));
+           //yourInfoError();
+            userNumLayout.setError(getResources().getString(R.string.forgetInterUserNum));
 
 
         }else {
@@ -110,31 +111,33 @@ public class login extends AppCompatActivity {
 
         hideKeyboard();
         // call method forgetYourInfo to show the alertDialog
-//        if(userNumTran.isEmpty()){
-//            userNumLayout.setError(getResources().getString(R.string.forgetInterUserNum));
-//        }else if (userPasswordTran.isEmpty()){
-//            userPasswordLayout.setError(getResources().getString(R.string.forgetInterUserPassword));
-//            userNumLayout.setErrorEnabled(false);
-//        }else{
-//            userNumLayout.setErrorEnabled(false);
-//            userPasswordLayout.setErrorEnabled(false);
-//            test = "true";
-//            doLogin();
-//        }
+        if(userNumTran.isEmpty() || userPasswordTran.isEmpty()){
+            userNumLayout.setError(getResources().getString(R.string.forgetInterUserNum));
+            userPasswordLayout.setError(getResources().getString(R.string.forgetInterUserPassword));
+            userNumLayout.setErrorEnabled(false);
+        }else if (userNumTran.length() != 10){
+            userPasswordLayout.setError(getResources().getString(R.string.forgetInterUserPassword));
+            userNumLayout.setErrorEnabled(false);
+        }else{
+            userNumLayout.setErrorEnabled(false);
+            userPasswordLayout.setErrorEnabled(false);
+            testField = "true";
+            doLogin();
+        }
 
         // to check the internt connection
-//        Boolean internet = isNetworkConnected();
+        Boolean internet = isNetworkConnected();
 //        if(internet== true){
 //            testInternet = "true";
 //        }else{
 //            snackInternet();
 //        }
         // chick the user number and password is full
-      //  if (testField == "true" && testInternet == "true"){
-            // send userNumTran, userPasswordTran to chickPassword method
-           // chickPassword(userNumTran , userPasswordTran);
-      //  }
-        moveTo("N","أحمد ",123);
+        if (testField == "true" && testInternet == "true"){
+             //send userNumTran, userPasswordTran to chickPassword method
+            //chickPassword(userNumTran , userPasswordTran);
+        }
+        moveTo("N","أحمد ",1234567891);
     }
 
     // method to show that the operation run
@@ -174,13 +177,14 @@ public class login extends AppCompatActivity {
 
         //Intent i = new Intent(login.this , userHome.class);
 
-        Intent i = new Intent(login.this , adminHome.class);
+        Intent i = new Intent(login.this , userHome.class);
 
         i.putExtra("ID",ID);
         i.putExtra("userName",userName);
         login.this.startActivity(i);
         finish();
         Log.e("value", userName);
+
 //        Toast.makeText(login.this, "This is my Toast message!"+ID+userName,
 //                Toast.LENGTH_LONG).show();
     }

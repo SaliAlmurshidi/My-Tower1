@@ -19,7 +19,6 @@ public class splashScreen extends AppCompatActivity {
         //Remove notification bar
        // this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-
         new Handler().postDelayed(new Runnable() {
 
             /*
@@ -28,7 +27,6 @@ public class splashScreen extends AppCompatActivity {
 
             @Override
             public void run() {
-                // This method will be executed once the timer is over
                 // Start login activity
                 Intent i = new Intent(splashScreen.this, login.class);
                 startActivity(i);
@@ -36,6 +34,5 @@ public class splashScreen extends AppCompatActivity {
                 finish();
             }
         }, splashTime);
-
     }
 }

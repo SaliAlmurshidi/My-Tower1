@@ -29,11 +29,6 @@
             android:supportsRtl="true"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".home.userHome"
-            android:label="@string/title_activity_user_home"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".home.adminHome"
             android:label="@string/title_activity_admin_home"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -50,10 +45,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".adminHomeActivity.admin_service" />
         <activity android:name=".serviceDetails" />
-        <activity android:name=".adminHomeActivity.admin_groups"
-            android:label="@string/title_activity_admin_users">
-
-        </activity>
+        <activity
+            android:name=".adminHomeActivity.admin_groups"
+            android:label="@string/title_activity_admin_users" />
+        <activity
+            android:name=".home.userHome"
+            android:label="@string/title_activity_user_home"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

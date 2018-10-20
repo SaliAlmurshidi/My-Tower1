@@ -43,26 +43,26 @@ public class fragmentAdminListUsers extends Fragment {
 
         searchBar = (EditText) rootView.findViewById(R.id.search_box);
 
-        searchBar.addTextChangedListener(textWatcher);
+        //searchBar.addTextChangedListener(textWatcher);
 
         return rootView;
     }
 
-    TextWatcher textWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-            adapter.getFilter().filter(s);
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
+//    TextWatcher textWatcher = new TextWatcher() {
+//        @Override
+//        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//        }
+//
+//        @Override
+//        public void onTextChanged(CharSequence s, int start, int before, int count) {
+//            adapter.getFilter().filter(s);
+//        }
+//
+//        @Override
+//        public void afterTextChanged(Editable s) {
+//
+//        }
+//    };
 
     private void recyclerView() {
         recyclerView = (RecyclerView) rootView.findViewById(R.id.nameList);

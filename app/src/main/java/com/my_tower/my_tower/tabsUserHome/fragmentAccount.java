@@ -1,9 +1,10 @@
 package com.my_tower.my_tower.tabsUserHome;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.net.Uri;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,17 +18,21 @@ import com.my_tower.my_tower.Model.accountModel;
 import com.my_tower.my_tower.R;
 import java.util.ArrayList;
 import java.util.List;
-import static com.my_tower.my_tower.home.userHome.MY_PREFS_NAME;
+
 
 public class fragmentAccount extends Fragment{
 
     private List<accountModel> accountList = new ArrayList<>();
     private RecyclerView recyclerView;
     private accountAdapter mAdapter;
+    private OnFragmentInteractionListener mListener;
     View rootView;
     TextView value;
     ImageView image;
     String name,idName ;
+    private TabLayout tabLayout;
+    private ViewPager mViewPager;
+    ArrayList<String> tabName;
     //int idName;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,17 +47,18 @@ public class fragmentAccount extends Fragment{
         putValues();
         return rootView;
 
+
     }
 
     public void sharedPreferences (){
-        SharedPreferences preferences = this.getActivity().getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
-        //SharedPreferences prefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
-        String restoredText = preferences.getString("text", null);
-        if (restoredText != null) {
-            //name = preferences.getString("userName", "No name defined");//"No name defined" is the default value.
-            idName = preferences.getString("idUser", "No name defined");//"No name defined" is the default value.
-            // idName = prefs.getInt("idUser", 0); //0 is the default value.
-        }
+//        SharedPreferences preferences = this.getActivity().getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
+//        //SharedPreferences prefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+//        String restoredText = preferences.getString("text", null);
+//        if (restoredText != null) {
+//            //name = preferences.getString("userName", "No name defined");//"No name defined" is the default value.
+//            idName = preferences.getString("idUser", "No name defined");//"No name defined" is the default value.
+//            // idName = prefs.getInt("idUser", 0); //0 is the default value.
+//        }
     }
 
     public void putValues (){
@@ -68,6 +74,11 @@ public class fragmentAccount extends Fragment{
 
         mAdapter.notifyDataSetChanged();
 
+    }
+
+    public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
+        public void onFragmentInteraction(Uri uri);
     }
 
 }
